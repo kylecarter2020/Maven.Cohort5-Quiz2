@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment2.part1;
 
+import com.sun.tools.javac.util.ArrayUtils;
+
 import java.util.ArrayList;
 
 public class IntegerArrayUtilities {
@@ -19,7 +21,7 @@ public class IntegerArrayUtilities {
             return result;
         }
         else {
-            Integer[] result = {};
+            Integer[] result = {0};
             return result;
         }
     }
