@@ -2,6 +2,8 @@ package com.zipcodewilmington.assessment2.part2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArrayUtility {
     public Integer[] merge(Integer[] array1, Integer[] array2) {
@@ -30,13 +32,15 @@ public class ArrayUtility {
     }
 
     public Integer mostCommon(Integer[] array) {
-        Integer mostCommon = array[0];
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.addAll(Arrays.asList(array));
+        Integer mostCommon = 0;
         Integer maxCount = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            Integer count = countOccurrence(array, i);
-
-            if (count > maxCount) {
+        for (Integer i: arrayList) {
+            Integer count = Collections.frequency(arrayList, i);
+            if(count > maxCount)
+            {
                 mostCommon = i;
                 maxCount = count;
             }

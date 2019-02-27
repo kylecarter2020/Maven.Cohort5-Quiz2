@@ -10,7 +10,7 @@ public class ListUtility {
         list = new ArrayList<>();
     }
 
-    public Boolean add(int i) {
+    public Boolean add(Integer i) {
         Boolean add = false;
         list.add(i);
         if (list.contains(i)) {
