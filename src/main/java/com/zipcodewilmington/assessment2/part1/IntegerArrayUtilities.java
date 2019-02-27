@@ -1,7 +1,5 @@
 package com.zipcodewilmington.assessment2.part1;
 
-import com.sun.tools.javac.util.ArrayUtils;
-
 import java.util.ArrayList;
 
 public class IntegerArrayUtilities {
@@ -15,15 +13,7 @@ public class IntegerArrayUtilities {
         for (int i = start; i <= stop; i++) {
             getRange.add(i);
         }
-
-        if(getRange.size() > 0) {
-            Integer[] result = getRange.toArray(new Integer[getRange.size()]);
-            return result;
-        }
-        else {
-            Integer[] result = {0};
-            return result;
-        }
+        return getRange.toArray(new Integer[getRange.size()]);
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
