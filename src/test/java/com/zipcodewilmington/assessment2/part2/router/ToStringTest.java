@@ -1,6 +1,5 @@
 package com.zipcodewilmington.assessment2.part2.router;
 
-import com.zipcodewilmington.assessment2.part2.ListUtility;
 import com.zipcodewilmington.assessment2.part2.Router;
 import org.junit.Assert;
 import org.junit.Test;

@@ -13,7 +13,7 @@ public class IntegerArrayUtilities {
         for (int i = start; i <= stop; i++) {
             getRange.add(i);
         }
-        return getRange.toArray(new Integer[getRange.size()]);
+        return getRange.toArray(new Integer[0]);
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {

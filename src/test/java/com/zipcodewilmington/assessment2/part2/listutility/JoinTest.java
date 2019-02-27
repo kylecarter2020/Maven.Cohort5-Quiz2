@@ -2,11 +2,7 @@ package com.zipcodewilmington.assessment2.part2.listutility;
 
 import com.zipcodewilmington.assessment2.part2.ListUtility;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class JoinTest {
     private ListUtility utility = new ListUtility();

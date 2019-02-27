@@ -6,15 +6,15 @@ public class WuTangConcatenator {
         this.input = input;
     }
 
-    public Boolean isWu() {
+    Boolean isWu() {
         return (this.input % 3) == 0;
     }
 
-    public Boolean isTang() {
+    Boolean isTang() {
         return (this.input % 5) == 0;
     }
 
-    public Boolean isWuTang() {
+    Boolean isWuTang() {
         return (this.input % 15) == 0;
     }
 }
